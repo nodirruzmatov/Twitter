@@ -1,0 +1,6 @@
+.nav {
+
+  &__item + &__item {
+    margin-top: 30px;
+  }
+}
