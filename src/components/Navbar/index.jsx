@@ -21,26 +21,26 @@ const Navbar = ()=>{
           <NavLink to="/" className={" font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={home} width={24} height={24} alt="home" /> Home</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={explore} width={24} height={24} alt="explore" />Explore</NavLink>
+          <NavLink to="/explore" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={explore} width={24} height={24} alt="explore" />Explore</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={notification} width={24} height={24} alt="notification" />notification</NavLink>
+          <NavLink to="/notification" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={notification} width={24} height={24} alt="notification" />Notification</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={messages} width={24} height={24} alt="messages" />messages</NavLink>
+          <NavLink to="/messages" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={messages} width={24} height={24} alt="messages" />Messages</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={bookmarks} width={24} height={24} alt="bookmarks" />bookmarks</NavLink>
+          <NavLink to="/bookmarks" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={bookmarks} width={24} height={24} alt="bookmarks" />Bookmarks</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={lists} width={24} height={24} alt="lists" />lists</NavLink>
+          <NavLink to="/lists" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={lists} width={24} height={24} alt="lists" />Lists</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={profil} width={24} height={24} alt="profil" />profil</NavLink>
+          <NavLink to="/profil" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={profil} width={24} height={24} alt="Profil" />profil</NavLink>
         </li>
         
         <li className="nav__item">
-          <NavLink to="/" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={more} width={24} height={24} alt="more" />more</NavLink>
+          <NavLink to="/more" className={"font-semibold text-[18px] leading-[24px] font-[Noto Sans] flex items-center"}><img className="mr-5" src={more} width={24} height={24} alt="more" />More</NavLink>
         </li>
         
 
