@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import Aside from "../Aside"
 import Bookmark from "../Bookmark"
 import Explore from "../Explore"
@@ -8,20 +8,24 @@ import Messages from "../Messages"
 import More from "../More"
 import Notification from "../Notification"
 import Profil from "../Profil"
+import Login from "../Login"
 
 
 
 
 
 
-const Main = ()=> {
+const Main = ({auth})=> {
+
+  const {pathname} = useLocation()
 
   return <>
 
     <main className="main flex ">
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/explore" element={<Explore />} />
+      <Route exact strict path="/login" element={<Login auth={auth} />} />
+      <Route sensitive path="/" element={<Home />} />
+      <Route exact path="/explore" element={<Explore />} />
       <Route path="/notification" element={<Notification />} />
       <Route path="/messages" element={<Messages />} />
       <Route path="/bookmarks" element={<Bookmark />} />
@@ -32,7 +36,7 @@ const Main = ()=> {
       </Routes>
       
       
-      <Aside />
+      {(pathname==="/login") ? "" : <Aside />}
     </main>
   </>
 
